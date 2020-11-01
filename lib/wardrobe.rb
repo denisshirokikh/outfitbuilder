@@ -1,6 +1,8 @@
 require_relative 'clothes_item'
 
 class Wardrobe
+  attr_reader :clothes
+
   def self.from_dir(dir_path)
     files = Dir[File.join(dir_path, '*.txt')]
 
